@@ -14,8 +14,8 @@ const Title = ({ type }: TitleProps) => {
         {isProject ? (
           <div className="max-w-xs md:max-w-2xl">
             <p className="text-lg font-medium text-white/70">
-              "Projects I've built since starting in September 2025. I'm still
-              learning and improving along the way."
+              Projects I've built since starting in September 2025. I'm still
+              learning and improving along the way.
             </p>
           </div>
         ) : (

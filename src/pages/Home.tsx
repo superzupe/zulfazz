@@ -8,9 +8,9 @@ import Card from "@/components/Card";
 
 const Home = () => {
   return (
-    <div className="relative min-h-screen pb-20 bg-space flex flex-col justify-center items-center md:min-w-5xl">
+    <div className="relative min-h-screen pb-20 bg-space flex flex-col justify-center items-center min-w-sm md:min-w-5xl">
       <Header />
-      <div className="flex flex-col justify-center items-center mt-40 mb-10 md:mt-70">
+      <div className="flex flex-col justify-center items-center mt-40 mb-10 md:mt-60">
         <div className="flex flex-col-reverse md:flex-row gap-10">
           <Title type="about" />
           <Images />

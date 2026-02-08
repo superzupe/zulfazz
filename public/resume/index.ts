@@ -1,1 +1,0 @@
-export {default as Resume} from "./Alifya Zulfa Zahro_CVATS_English.pdf";

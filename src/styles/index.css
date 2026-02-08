@@ -32,9 +32,9 @@
 }
 .bg-space2 {
   background:
-    radial-gradient(circle at 0% 0%, rgb(0, 99, 145) 0%, transparent 10%),
-    radial-gradient(circle at 0% 80%, rgb(0, 99, 145) 0%, transparent 20%),
-    radial-gradient(circle at 95% 10%, rgb(0, 99, 145) 10%, transparent 40%);
+    radial-gradient(circle at 100% 0%, rgb(0, 99, 145) 0%, transparent 20%),
+    radial-gradient(circle at 0% 80%, rgb(0, 99, 145) 0%, transparent 40%),
+    radial-gradient(circle at 100% 100%, rgb(0, 99, 145) 0%, transparent 10%);
   background-color: #000;
   background-blend-mode: screen;
   background-attachment: fixed;
@@ -42,9 +42,9 @@
 
 .bg-space3 {
   background:
-    radial-gradient(circle at 0% 0%, rgb(91, 30, 94) 0%, transparent 10%),
-    radial-gradient(circle at 0% 80%, rgb(91, 30, 94) 0%, transparent 20%),
-    radial-gradient(circle at 95% 10%, rgb(91, 30, 94) 10%, transparent 40%);
+    radial-gradient(circle at 0% 0%, rgb(91, 30, 94) 0%, transparent 30%),
+    radial-gradient(circle at 0% 100%, rgb(91, 30, 94) 0%, transparent 10%),
+    radial-gradient(circle at 95% 70%, rgb(91, 30, 94) 0%, transparent 40%);
   background-color: #000;
   background-blend-mode: screen;
   background-attachment: fixed;
@@ -70,6 +70,10 @@
 
 .glass-btn3 {
   @apply shadow-[0_0_30px_rgba(0,0,0,0.15)] hover:shadow-[0_0_60px_rgba(255,255,255,0.15)];
+}
+
+.glass-btn4 {
+  @apply cursor-pointer bg-black/70 shadow-[0_0_15px_rgba(255,255,255,0.1)] backdrop-blur-xl border border-white/30 rounded-lg transition-all duration-500 
 }
 
 .menu-btn {
