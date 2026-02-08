@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap");
+
+@import "tailwindcss";
+
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+@theme {
+  --color-yelsoft: #f0e68c;
+
+  --font-geist: "Geist", sans-serif;
+  --font-cabinet: "Cabinet", sans-serif;
+}
+
+@font-face {
+  font-family: "Cabinet";
+  src: url("../../font/CabinetGrotesk-Variable.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+.bg-space {
+  background:
+    radial-gradient(circle at 0% 0%, rgb(45, 38, 78) 0%, transparent 10%),
+    radial-gradient(circle at 0% 80%, rgb(45, 38, 78) 0%, transparent 20%),
+    radial-gradient(circle at 95% 10%, rgb(45, 38, 78) 10%, transparent 40%);
+  background-color: #000;
+  background-blend-mode: screen;
+  background-attachment: fixed;
+}
+.bg-space2 {
+  background:
+    radial-gradient(circle at 0% 0%, rgb(0, 99, 145) 0%, transparent 10%),
+    radial-gradient(circle at 0% 80%, rgb(0, 99, 145) 0%, transparent 20%),
+    radial-gradient(circle at 95% 10%, rgb(0, 99, 145) 10%, transparent 40%);
+  background-color: #000;
+  background-blend-mode: screen;
+  background-attachment: fixed;
+}
+
+.bg-space3 {
+  background:
+    radial-gradient(circle at 0% 0%, rgb(91, 30, 94) 0%, transparent 10%),
+    radial-gradient(circle at 0% 80%, rgb(91, 30, 94) 0%, transparent 20%),
+    radial-gradient(circle at 95% 10%, rgb(91, 30, 94) 10%, transparent 40%);
+  background-color: #000;
+  background-blend-mode: screen;
+  background-attachment: fixed;
+}
+
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.glass-btn,
+.glass-btn2,
+.glass-btn3 {
+  @apply cursor-pointer bg-white/5 backdrop-blur-xl border border-white/20 rounded-xl transition-all duration-500;
+}
+
+.glass-btn {
+  @apply shadow-[0_0_15px_rgba(255,255,255,0.1)] hover:shadow-[0_0_30px_rgba(0,0,0,0.2)];
+}
+
+.glass-btn2 {
+  @apply shadow-[0_0_15px_rgba(0,0,0,0.1)] hover:shadow-[0_0_30px_rgba(255,255,255,0.1)];
+}
+
+.glass-btn3 {
+  @apply shadow-[0_0_30px_rgba(0,0,0,0.15)] hover:shadow-[0_0_60px_rgba(255,255,255,0.15)];
+}
+
+.menu-btn {
+  @apply hover:bg-white/20 rounded-full py-1 px-2 transition-all duration-300 ease-in;
+}
+
+body {
+  @apply font-cabinet;
+}
+
+@layer base {
+  a,
+  button,
+  input {
+    @apply transition-all duration-300 ease-in-out;
+  }
+}
