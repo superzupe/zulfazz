@@ -2,7 +2,7 @@ const Resume = () => {
   return (
     <div className="w-full h-screen">
       <iframe
-        src="/resume/Alifya Zulfa Zahro.pdf"
+        src="/resume/resume.pdf"
         className="w-full h-full"
         title="Resume PDF"
       />
